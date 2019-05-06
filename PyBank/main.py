@@ -55,9 +55,9 @@ lines.append("Financial Analysis")
 lines.append("----------------------------")
 lines.append("Total Months: "+str(totalMonths))
 lines.append("Total Revenue: $" + str(totalRevenue))
-lines.append("Average Revenue Change: $"+str(avgRevenueChange))
-lines.append("Greatest Increase in Revenue: "+greatestRevIncDate + " ($" + str(greatestRevIncAmt) +")")
-lines.append("Greatest Decrease in Revenue: "+greatestRevDecDate + " ($" + str(greatestRevDecAmt) +")")
+lines.append("Average Change: $"+str(avgRevenueChange))
+lines.append("Greatest Increase in Profits: "+greatestRevIncDate + " ($" + str(greatestRevIncAmt) +")")
+lines.append("Greatest Decrease in Profits: "+greatestRevDecDate + " ($" + str(greatestRevDecAmt) +")")
 
  ##Write the output to file and console
 for line in lines:

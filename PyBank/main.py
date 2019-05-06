@@ -1,6 +1,8 @@
+# impot libraries
 import os
 import csv
 
+# create and define all varibles needed
 totalMonths = 0
 totalRevenue = 0
 avgRevenueChange = 0
@@ -29,6 +31,7 @@ with open(csvpath, newline='') as bankdata:
         totalRevenueChange = totalRevenueChange + revIncrease
         prevRevenue =  int(row[1])
 
+        #firgure the math
         if(revIncrease > greatestRevIncAmt):
              greatestRevIncAmt = revIncrease
              greatestRevIncDate = row[0]
@@ -37,7 +40,7 @@ with open(csvpath, newline='') as bankdata:
             greatestRevDecAmt = revIncrease
             greatestRevDecDate = row[0]
 
-
+#figure the math
 avgRevenueChange = round(totalRevenueChange/totalMonths,2)
 
 #create and open output file to write resuts to
